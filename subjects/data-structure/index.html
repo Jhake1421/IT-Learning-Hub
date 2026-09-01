@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA 101 | Data Structures and Algorithms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="brand-area">
+            <button class="hamburger" id="menuButton" aria-label="Open menu">☰</button>
+
+            <a href="#overview" class="brand">
+                <span class="logo">&lt;/&gt;</span>
+                <span class="brand-text">
+                    <strong>DSA 101</strong>
+                    <small>Data Structures and Algorithms</small>
+                </span>
+            </a>
+        </div>
+
+        <!-- Desktop top navigation -->
+        <nav class="top-nav" id="topNav">
+            <a href="../../index.html">IT Learning Hub</a>
+            <a href="#overview">Overview</a>
+            <a href="#prelims">Prelims</a>
+            <a href="#midterms">Midterms</a>
+            <a href="#finals">Finals</a>
+            <a href="#grading">Grading System</a>
+        </nav>
+    </header>
+
+    <!-- Mobile navigation overlay.
+         It combines the desktop top navigation and subject navigation. -->
+    <div class="mobile-menu-panel" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <strong>COURSE NAVIGATION</strong>
+            <button id="closeMenu" aria-label="Close menu">×</button>
+        </div>
+
+        <nav class="mobile-top-links">
+            <a href="../../index.html">IT Learning Hub</a>
+            <a href="#overview">Overview</a>
+            <a href="#prelims">Prelims</a>
+            <a href="#midterms">Midterms</a>
+            <a href="#finals">Finals</a>
+            <a href="#grading">Grading System</a>
+        </nav>
+
+        <div class="mobile-subject-navigation">
+            <p>SUBJECT CONTENT</p>
+            <a href="#overview">⌂ &nbsp; Overview</a>
+
+            <h4>PRELIMS</h4>
+            <a href="#p-introduction">1. Introduction</a>
+            <a href="#p-arrays">2. Arrays</a>
+            <a href="#p-searching">3. Searching</a>
+            <a href="#p-sorting">4. Sorting</a>
+
+            <h4>MIDTERMS</h4>
+            <a href="#m-linked">1. Linked Lists</a>
+            <a href="#m-stacks">2. Stacks</a>
+            <a href="#m-queues">3. Queues</a>
+            <a href="#m-hashing">4. Hash Tables</a>
+
+            <h4>FINALS</h4>
+            <a href="#f-trees">1. Trees</a>
+            <a href="#f-graphs">2. Graphs</a>
+            <a href="#f-advanced">3. Advanced Topics</a>
+
+            <a href="#grading" class="mobile-extra">⚖ &nbsp; Grading System</a>
+            <a href="#resources" class="mobile-extra">▣ &nbsp; Resources</a>
+        </div>
+    </div>
+
+    <!-- Mobile navigation overlay.
+         It combines the desktop top navigation and subject navigation. -->
+    <div class="mobile-menu-panel" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <strong>COURSE NAVIGATION</strong>
+            <button id="closeMenu" aria-label="Close menu">×</button>
+        </div>
+
+        <nav class="mobile-top-links">
+            <a href="../../index.html">IT Learning Hub</a>
+            <a href="#overview">Overview</a>
+            <a href="#prelims">Prelims</a>
+            <a href="#midterms">Midterms</a>
+            <a href="#finals">Finals</a>
+            <a href="#grading">Grading System</a>
+        </nav>
+
+        <div class="mobile-subject-navigation">
+            <p>SUBJECT CONTENT</p>
+            <a href="#overview">⌂ &nbsp; Overview</a>
+
+            <h4>PRELIMS</h4>
+            <a href="#p-introduction">1. Introduction</a>
+            <a href="#p-arrays">2. Arrays</a>
+            <a href="#p-searching">3. Searching</a>
+            <a href="#p-sorting">4. Sorting</a>
+
+            <h4>MIDTERMS</h4>
+            <a href="#m-linked">1. Linked Lists</a>
+            <a href="#m-stacks">2. Stacks</a>
+            <a href="#m-queues">3. Queues</a>
+            <a href="#m-hashing">4. Hash Tables</a>
+
+            <h4>FINALS</h4>
+            <a href="#f-trees">1. Trees</a>
+            <a href="#f-graphs">2. Graphs</a>
+            <a href="#f-advanced">3. Advanced Topics</a>
+
+            <a href="#grading" class="mobile-extra">⚖ &nbsp; Grading System</a>
+            <a href="#resources" class="mobile-extra">▣ &nbsp; Resources</a>
+        </div>
+    </div>
+
+    <div class="page-layout">
+
+        <!-- LEFT SUBJECT NAVIGATION -->
+        <aside class="sidebar">
+
+            <div class="sidebar-title">SUBJECT CONTENT</div>
+
+            <section class="side-section">
+                <h3>PRELIMS</h3>
+
+                <div class="side-category">
+                    <a href="#p-introduction" class="category-link"><span>1. &nbsp; Introduction</span><span>⌄</span></a>
+                    <div class="sub-links">
+                        <a href="#p-introduction">1.1 &nbsp; What is Data?</a>
+                        <a href="#p-data">1.2 &nbsp; Data Structures</a>
+                        <a href="#p-algorithms">1.3 &nbsp; Algorithms</a>
+                        <a href="#p-complexity">1.4 &nbsp; Algorithm Complexity</a>
+                        <a href="#p-time-space">1.5 &nbsp; Time &amp; Space Complexity</a>
+                    </div>
+                </div>
+
+                <div class="side-category">
+                    <a href="#p-arrays" class="category-link"><span>2. &nbsp; Arrays</span><span>⌄</span></a>
+                    <div class="sub-links">
+                        <a href="#p-arrays">2.1 &nbsp; Introduction to Arrays</a>
+                        <a href="#p-arrays">2.2 &nbsp; Creating &amp; Initializing Arrays</a>
+                        <a href="#p-arrays">2.3 &nbsp; Access</a>
+                        <a href="#p-arrays">2.4 &nbsp; Update</a>
+                        <a href="#p-arrays">2.5 &nbsp; Traversal</a>
+                        <a href="#p-arrays">2.6 &nbsp; Insertion</a>
+                        <a href="#p-arrays">2.7 &nbsp; Deletion</a>
+                        <a href="#p-arrays">2.8 &nbsp; Array Complexity</a>
+                    </div>
+                </div>
+
+                <div class="side-category">
+                    <a href="#p-searching" class="category-link"><span>3. &nbsp; Searching Algorithms</span><span>⌄</span></a>
+                    <div class="sub-links">
+                        <a href="#p-searching">3.1 &nbsp; Linear Search</a>
+                        <a href="#p-searching">3.2 &nbsp; Binary Search</a>
+                        <a href="#p-searching">3.3 &nbsp; Jump Search</a>
+                        <a href="#p-searching">3.4 &nbsp; Searching Comparison</a>
+                    </div>
+                </div>
+
+                <div class="side-category">
+                    <a href="#p-sorting" class="category-link"><span>4. &nbsp; Sorting Algorithms</span><span>⌄</span></a>
+                    <div class="sub-links">
+                        <a href="#p-sorting">4.1 &nbsp; Introduction to Sorting</a>
+                        <a href="#p-sorting">4.2 &nbsp; Bubble Sort</a>
+                        <a href="#p-sorting">4.3 &nbsp; Selection Sort</a>
+                        <a href="#p-sorting">4.4 &nbsp; Insertion Sort</a>
+                        <a href="#p-sorting">4.5 &nbsp; Merge Sort</a>
+                        <a href="#p-sorting">4.6 &nbsp; Quick Sort</a>
+                        <a href="#p-sorting">4.7 &nbsp; Sorting Comparison</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="side-section">
+                <h3>MIDTERMS</h3>
+                <div class="side-category"><a href="#m-linked" class="category-link"><span>1. &nbsp; Linked Lists</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#m-linked">1.1 &nbsp; Introduction to Linked Lists</a><a href="#m-linked">1.2 &nbsp; Singly Linked List</a><a href="#m-linked">1.3 &nbsp; Doubly Linked List</a><a href="#m-linked">1.4 &nbsp; Circular Linked List</a><a href="#m-linked">1.5 &nbsp; Linked List Operations</a><a href="#m-linked">1.6 &nbsp; Linked List Comparison</a>
+                </div></div>
+                <div class="side-category"><a href="#m-stacks" class="category-link"><span>2. &nbsp; Stacks</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#m-stacks">2.1 &nbsp; Introduction to Stack</a><a href="#m-stacks">2.2 &nbsp; Push</a><a href="#m-stacks">2.3 &nbsp; Pop</a><a href="#m-stacks">2.4 &nbsp; Peek / Top</a><a href="#m-stacks">2.5 &nbsp; IsEmpty / IsFull</a><a href="#m-stacks">2.6 &nbsp; Stack Implementation</a><a href="#m-stacks">2.7 &nbsp; Applications of Stack</a><a href="#m-stacks">2.8 &nbsp; Stack Complexity</a>
+                </div></div>
+                <div class="side-category"><a href="#m-queues" class="category-link"><span>3. &nbsp; Queues</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#m-queues">3.1 &nbsp; Introduction to Queue</a><a href="#m-queues">3.2 &nbsp; Enqueue</a><a href="#m-queues">3.3 &nbsp; Dequeue</a><a href="#m-queues">3.4 &nbsp; Front / Peek</a><a href="#m-queues">3.5 &nbsp; IsEmpty</a><a href="#m-queues">3.6 &nbsp; Queue Implementation</a><a href="#m-queues">3.7 &nbsp; Circular Queue</a><a href="#m-queues">3.8 &nbsp; Priority Queue</a><a href="#m-queues">3.9 &nbsp; Queue Applications</a>
+                </div></div>
+                <div class="side-category"><a href="#m-hashing" class="category-link"><span>4. &nbsp; Hash Tables</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#m-hashing">4.1 &nbsp; Introduction to Hashing</a><a href="#m-hashing">4.2 &nbsp; Hash Functions</a><a href="#m-hashing">4.3 &nbsp; Insert</a><a href="#m-hashing">4.4 &nbsp; Search / Lookup</a><a href="#m-hashing">4.5 &nbsp; Delete</a><a href="#m-hashing">4.6 &nbsp; Update</a><a href="#m-hashing">4.7 &nbsp; Collision Handling</a><a href="#m-hashing">4.8 &nbsp; Applications</a>
+                </div></div>
+            </section>
+
+            <section class="side-section">
+                <h3>FINALS</h3>
+                <div class="side-category"><a href="#f-trees" class="category-link"><span>1. &nbsp; Trees</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#f-trees">1.1 &nbsp; Introduction to Trees</a><a href="#f-trees">1.2 &nbsp; Binary Trees</a><a href="#f-trees">1.3 &nbsp; Tree Operations</a><a href="#f-trees">1.4 &nbsp; Binary Search Tree</a><a href="#f-trees">1.5 &nbsp; Tree Traversal</a><a href="#f-trees">1.6 &nbsp; Tree Complexity</a>
+                </div></div>
+                <div class="side-category"><a href="#f-graphs" class="category-link"><span>2. &nbsp; Graphs</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#f-graphs">2.1 &nbsp; Introduction to Graphs</a><a href="#f-graphs">2.2 &nbsp; Graph Types</a><a href="#f-graphs">2.3 &nbsp; Graph Representation</a><a href="#f-graphs">2.4 &nbsp; Graph Operations</a><a href="#f-graphs">2.5 &nbsp; BFS</a><a href="#f-graphs">2.6 &nbsp; DFS</a><a href="#f-graphs">2.7 &nbsp; Shortest Path</a>
+                </div></div>
+                <div class="side-category"><a href="#f-advanced" class="category-link"><span>3. &nbsp; Advanced Algorithms</span><span>⌄</span></a><div class="sub-links">
+                    <a href="#f-advanced">3.1 &nbsp; Recursion</a><a href="#f-advanced">3.2 &nbsp; Divide and Conquer</a><a href="#f-advanced">3.3 &nbsp; Dynamic Programming</a><a href="#f-advanced">3.4 &nbsp; Algorithm Comparison &amp; Problem Solving</a>
+                </div></div>
+            </section>
+
+            <a href="#grading" class="sidebar-extra">⚖ &nbsp; Grading System</a>
+            <a href="#resources" class="sidebar-extra">▣ &nbsp; Resources</a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="content">
+
+            <!-- HERO -->
+            <section class="hero" id="overview">
+                <div class="hero-text">
+                    <p>Welcome to</p>
+                    <h1>Data Structures<br>and Algorithms</h1>
+                    <span>Master efficient data organization and problem-solving techniques to build better programs and solve real-world challenges.</span>
+                    <a href="#prelims" class="button">Start Learning &nbsp; →</a>
+                </div>
+
+                <div class="hero-art">
+                    <div class="laptop">
+                        <div class="screen">
+                            <i></i><i></i><i></i><i></i>
+                            <div class="screen-tree">●<br>&nbsp;● &nbsp;●</div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+
+                    <div class="cube cube-a"></div>
+                    <div class="cube cube-b"></div>
+
+                    <div class="network">
+                        <span class="node node-a"></span>
+                        <span class="node node-b"></span>
+                        <span class="node node-c"></span>
+                        <span class="node node-d"></span>
+                        <span class="line line-a"></span>
+                        <span class="line line-b"></span>
+                        <span class="line line-c"></span>
+                    </div>
+                </div>
+
+                <div class="hero-dots"><b></b><b></b><b></b></div>
+            </section>
+
+            <!-- INFORMATION -->
+            <section class="card subject-information">
+                <h2>Information about Subject</h2>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-icon">▣</span>
+                        <div><small>Course Name</small><strong>Data Structures<br>and Algorithms</strong></div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">&lt;/&gt;</span>
+                        <div><small>Course Code</small><strong>CC 103</strong></div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">◷</span>
+                        <div><small>Duration</small><strong>19 Weeks</strong></div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">♙</span>
+                        <div><small>Instructor</small><strong>JDP</strong></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESCRIPTION -->
+            <section class="card">
+                <h2>Course Description</h2>
+                <p>
+                    This course covers fundamental data structures and algorithms and their
+                    applications in solving real-world problems efficiently. Students will learn
+                    how to design, analyze, and implement algorithms using appropriate data
+                    structures to optimize performance in terms of time and space complexity.
+                </p>
+            </section>
+
+            <!-- OUTLINE -->
+            <section class="card outline" id="course-outline">
+                <h2>Course Outline</h2>
+                <p>The course is divided into three major parts: Prelims, Midterms, and Finals.</p>
+                <div class="outline-grid">
+                    <div class="outline-box prelim-box"><h3>🖉 PRELIMS</h3><ol>
+                        <li><strong>Introduction to Data Structures and Algorithms</strong><ul><li>What is Data?</li><li>What is a Data Structure?</li><li>What is an Algorithm?</li><li>Algorithm Complexity</li><li>Time Complexity</li><li>Space Complexity</li></ul></li>
+                        <li><strong>Arrays</strong><ul><li>Introduction to Arrays</li><li>Creating &amp; Initializing Arrays</li><li>Access</li><li>Update</li><li>Traversal</li><li>Insertion</li><li>Deletion</li><li>Array Complexity</li></ul></li>
+                        <li><strong>Searching Algorithms</strong><ul><li>Linear Search</li><li>Binary Search</li><li>Jump Search</li><li>Searching Comparison</li></ul></li>
+                        <li><strong>Sorting Algorithms</strong><ul><li>Introduction to Sorting</li><li>Bubble Sort</li><li>Selection Sort</li><li>Insertion Sort</li><li>Merge Sort</li><li>Quick Sort</li><li>Sorting Comparison</li></ul></li>
+                    </ol></div>
+                    <div class="outline-box mid-box"><h3>🖉 MIDTERMS</h3><ol>
+                        <li><strong>Linked Lists</strong><ul><li>Introduction to Linked Lists</li><li>Singly Linked List</li><li>Doubly Linked List</li><li>Circular Linked List</li><li>Linked List Operations</li><li>Linked List Comparison</li></ul></li>
+                        <li><strong>Stacks</strong><ul><li>Introduction to Stack</li><li>Push</li><li>Pop</li><li>Peek / Top</li><li>IsEmpty / IsFull</li><li>Stack Implementation</li><li>Applications of Stack</li><li>Stack Complexity</li></ul></li>
+                        <li><strong>Queues</strong><ul><li>Introduction to Queue</li><li>Enqueue</li><li>Dequeue</li><li>Front / Peek</li><li>IsEmpty</li><li>Queue Implementation</li><li>Circular Queue</li><li>Priority Queue</li><li>Queue Applications</li></ul></li>
+                        <li><strong>Hash Tables</strong><ul><li>Introduction to Hashing</li><li>Hash Functions</li><li>Insert</li><li>Search / Lookup</li><li>Delete</li><li>Update</li><li>Collision Handling</li><li>Applications</li></ul></li>
+                    </ol></div>
+                    <div class="outline-box final-box"><h3>🖉 FINALS</h3><ol>
+                        <li><strong>Trees</strong><ul><li>Introduction to Trees</li><li>Binary Trees</li><li>Tree Operations</li><li>Binary Search Tree</li><li>Tree Traversal</li><li>Tree Complexity</li></ul></li>
+                        <li><strong>Graphs</strong><ul><li>Introduction to Graphs</li><li>Graph Types</li><li>Graph Representation</li><li>Graph Operations</li><li>BFS</li><li>DFS</li><li>Shortest Path</li></ul></li>
+                        <li><strong>Advanced Algorithms</strong><ul><li>Recursion</li><li>Divide and Conquer</li><li>Dynamic Programming</li><li>Algorithm Comparison &amp; Problem Solving</li></ul></li>
+                    </ol></div>
+                </div>
+            </section>
+
+            <!-- PRELIMS -->
+            <section class="topic-section prelim-section" id="prelims">
+                <div class="section-heading">
+                    <span><img src="../../images/logo2.png"></span>
+                    <div>
+                        <h2>Topics in Prelims</h2>
+                        <p>Introduction, arrays, searching, and sorting.</p>
+                    </div>
+                </div>
+
+                <div class="topic-tabs">
+                    <a href="#p-introduction">1. Introduction</a>
+                    <a href="#p-arrays">2. Arrays</a>
+                    <a href="#p-searching">3. Searching</a>
+                    <a href="#p-sorting">4. Sorting</a>
+                </div>
+
+                <article class="lesson" id="p-introduction">
+                    <h3>1. Introduction</h3>
+
+                    <h4 id="p-intro">1.1 What is DSA?</h4>
+                    <p>
+                        Data Structures and Algorithms (DSA) is a way of organizing and processing
+                        data efficiently in a computer. In understanding DSA, it is essential to have a basic understanding of programming.
+                    </p>
+                    <br>
+
+                    <div class="example">
+                        <strong>Example:</strong>
+                        <p>
+                            When you search for a contact in your phone, the data is stored in
+                            some structure, such as a list or tree, and the search is done using
+                            an algorithm.
+                        </p>
+                    </div>
+
+                    <div class="process">
+                        <div><small>DATA</small><strong>▦</strong></div>
+                        <b>→</b>
+                        <div><small>ALGORITHM</small><strong>⚙</strong></div>
+                        <b>→</b>
+                        <div><small>OUTPUT</small><strong>✓</strong></div>
+                    </div>
+
+                    <p>
+                        <b>Data vs Information</b><br>
+                        <b><i>Data</i></b> refers to raw facts and figures. <br><b><i>Information</i></b> is processed and
+                        organized data that has meaning and can be used to make decisions.
+                    </p>
+
+                    
+                    <div class="example">
+                        <strong>Example:</strong>
+                        <p>
+                            <b>Data:</b> 25, 30, 28, 35, 32<br>
+                            &emsp;<i>These are just numbers without context.</i>
+                        </p>
+                        <p>
+                            <b>Information:</b> "The temperatures for the past five days were 25°C, 30°C, 28°C, 35°C, and 32°C. The hottest day was 35°C."<br>
+                            &emsp;<i>The data has been organized and given meaning, making it useful.</i>
+                        </p>
+
+                        <strong>Another Example:</strong>
+                        <p>
+                            <b>Data:</b> Mars, Chris, Kyle, John, Rico<br>
+                            &emsp;<i>These are just random names and we don't know who they are.</i>
+                        </p>
+                        <p>
+                            <b>Information:</b> "The starting lineup of Team Icon for the Basketball Championship are Kyle, John, Chris, Mars and Rico"<br>
+                            &emsp;<i>In the information, the data was processed and given meaning.</i>
+                        </p>
+                    </div>
+
+                    <h4 id="p-data">1.2 Data Structures</h4>
+                    <p>
+                        A <b>data structure</b> is a way of organizing and storing data so that we can use it efficiently in a computer.
+                    </p>
+                    <br>
+                    <h5>Classification of Data Structure</h5>
+                    <p>Data structures are commonly classified into two major categories: <b>Primitive</b> and <b>Non-Primitive</b></p>
+
+                    <h6>Primitive Data Structures</h6>
+                    <p>These are the basic data types provided by a programming language.</p>
+                    
+                    <ul>
+                        <li>Integer</li>
+                        <li>Float/Double</li>
+                        <li>Character</li>
+                        <li>Boolean</li>
+                        <li>String/Varchar</li>
+                    </ul>
+
+                    <h6>Non-Primitive Data Structures</h6>
+                    <p>These are more complex data organizations created by combining primitive data types (like integers, floats, and characters) to store, manage, and manipulate collections of data efficiently.</p>
+                    <p>Unlike primitive types that store a single value directly in stack memory, non-primitive structures usually store references or memory addresses to objects allocated dynamically in the heap memory.</p>
+                    <br>
+                    <p>Non-Primitive Data Structures are divided into two categories, <b>Linear</b> and <b>Non-Linear</b> data structures.</p>
+                    <dt>A. Linear Data Structures</dt>
+                    <dd>In a linear data structure, elements are arranged sequentially, one after another.</dd>
+                    <ul>
+                        <li>Array</li>
+                        <li>Linked List</li>
+                        <li>Stack</li>
+                        <li>Queue</li>
+                    </ul>
+                    <dt>B. Non-Linear Data Structures</dt>
+                    <dd>In a Non-Linear Data Structures, elements are not arranged sequentially. They can have hierarchical or network relationships.</dd>
+                    <ul>
+                        <li>Tree</li>
+                        <li>Graph</li>
+                    </ul>
+
+                    <h4 id="p-algorithms">1.3 Algorithms</h4>
+                    <p>
+                        An algorithm is a step by step process, procedure or instruction to solve a problem or to perform or accomplish a specific task.
+                    </p>
+
+                    <h5>Characteristics of an Algorithm</h5>
+                    <ul class="check-list">
+                        <li>Input: one or more inputs may be provided.</li>
+                        <li>Output: one or more outputs are produced.</li>
+                        <li>Definiteness: each step must be clear and unambiguous.</li>
+                        <li>Finiteness: the algorithm eventually terminates.</li>
+                        <li>Effectiveness: each step is practical and executable.</li>
+                    </ul>
+
+                    <h4 id="p-complexity">1.4 Algorithm Complexity</h4>
+                    <p>
+                        Algorithm complexity describes how an algorithm's resource requirements
+                        change as the input size increases.
+                    </p>
+
+                    <h4 id="p-time-space">1.5 Time &amp; Space Complexity</h4>
+                    <p>
+                        Time complexity measures execution growth, while space complexity measures
+                        the additional memory required. Big O notation is commonly used to
+                        describe algorithm efficiency.
+                    </p>
+                </article>
+
+                <article class="lesson" id="p-arrays">
+                    <h3>2. Arrays</h3>
+                    <h4>2.1 What is an Array?</h4>
+                    <p>
+                        An array stores multiple values in an ordered collection. Each element
+                        can be accessed using its index.
+                    </p>
+
+                    <pre class="code"><code>let numbers = [10, 20, 30, 40]; console.log(numbers[0]); // 10</code></pre>
+
+                    <h4>2.2 Array Operations</h4>
+                    <p>
+                        Common array operations include traversal, searching, insertion, and
+                        deletion.
+                    </p>
+                </article>
+
+                <article class="lesson" id="p-searching">
+                    <h3>3. Searching</h3>
+                    <h4>3.1 Linear Search</h4>
+                    <p>
+                        Linear search checks elements one at a time until the requested value is
+                        found or the list ends.
+                    </p>
+
+                    <h4>3.2 Binary Search</h4>
+                    <p>
+                        Binary search works on sorted data and repeatedly divides the search
+                        interval in half.
+                    </p>
+                </article>
+
+                <article class="lesson" id="p-sorting">
+                    <h3>4. Sorting</h3>
+                    <h4>4.1 Common Sorting Algorithms</h4>
+                    <p>
+                        Sorting arranges data into a particular order. Common algorithms include
+                        Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort.
+                    </p>
+
+                    <pre class="code"><code>// Simple Bubble Sort
+                    for (let i = 0; i &lt; numbers.length; i++) {
+                        for (let j = 0; j &lt; numbers.length - i - 1; j++) {
+                            if (numbers[j] &gt; numbers[j + 1]) {
+                                let temp = numbers[j];
+                                numbers[j] = numbers[j + 1];
+                                numbers[j + 1] = temp;
+                            }
+                        }
+                    }</code></pre>
+                </article>
+            </section>
+
+            <!-- MIDTERMS -->
+            <section class="topic-section mid-section" id="midterms">
+                <div class="section-heading">
+                    <span><img src="../../images/logo2.png"></span>
+                    <div>
+                        <h2>Topics in Midterms</h2>
+                        <p>Linked lists, stacks, queues, and hash tables.</p>
+                    </div>
+                </div>
+
+                <div class="topic-tabs">
+                    <a href="#m-linked">1. Linked Lists</a>
+                    <a href="#m-stacks">2. Stacks</a>
+                    <a href="#m-queues">3. Queues</a>
+                    <a href="#m-hashing">4. Hash Tables</a>
+                </div>
+
+                <article>Loading...</article>
+            </section>
+
+            <!-- FINALS -->
+            <section class="topic-section final-section" id="finals">
+                <div class="section-heading">
+                    <span><img src="../../images/logo2.png"></span>
+                    <div>
+                        <h2>Topics in Finals</h2>
+                        <p>Trees, graphs, recursion, and advanced algorithms.</p>
+                    </div>
+                </div>
+
+                <div class="topic-tabs">
+                    <a href="#f-trees">1. Trees</a>
+                    <a href="#f-graphs">2. Graphs</a>
+                    <a href="#f-advanced">3. Advanced Topics</a>
+                </div>
+
+                <article>Loading...</article>
+            </section>
+
+            <!-- GRADING -->
+            <section class="card grading" id="grading">
+                <h2>Grading System</h2>
+                <p>The following is the sample grading distribution presented in the course syllabus.</p>
+
+                <div class="grading-grid">
+                    <div>
+                        <h3>PRELIM</h3>
+                        <p>Attendance / Values <b>10%</b></p>
+                        <p>Activity / Quiz / Laboratory <b>20%</b></p>
+                        <p>Assignment <b>15%</b></p>
+                        <p>Project <b>15%</b></p>
+                        <p>Prelim Exam <b>40%</b></p>
+                    </div>
+
+                    <div>
+                        <h3>MIDTERM</h3>
+                        <p>Attendance / Values <b>10%</b></p>
+                        <p>Activity / Quiz / Laboratory <b>20%</b></p>
+                        <p>Assignment <b>15%</b></p>
+                        <p>Project <b>15%</b></p>
+                        <p>Midterm Exam <b>40%</b></p>
+                    </div>
+
+                    <div>
+                        <h3>FINAL</h3>
+                        <p>Attendance / Values <b>10%</b></p>
+                        <p>Activity / Quiz / Laboratory <b>20%</b></p>
+                        <p>Assignment <b>15%</b></p>
+                        <p>Project <b>15%</b></p>
+                        <p>Final Exam <b>40%</b></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESOURCES -->
+            <section class="card" id="resources">
+                <h2>Resources</h2>
+
+                <div class="resource-grid">
+                    <a href="https://www.w3schools.com/dsa/" target="_blank">W3Schools DSA <span>↗</span></a>
+                    <a href="https://www.w3schools.com/dsa/dsa_syllabus.php" target="_blank">DSA Syllabus <span>↗</span></a>
+                    <a href="#">Lecture Notes <span>→</span></a>
+                    <a href="#">Practice Problems <span>→</span></a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column about">
+            <div class="footer-brand">
+                <span class="logo">&lt;/&gt;</span>
+                <div>
+                    <strong>DSA 101</strong>
+                    <small>Data Structures and Algorithms</small>
+                </div>
+            </div>
+            <p>A comprehensive course for learning data structures and algorithms for efficient problem solving.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>QUICK LINKS</h3>
+            <a href="#overview">Overview</a>
+            <a href="#prelims">Prelims</a>
+            <a href="#midterms">Midterms</a>
+            <a href="#finals">Finals</a>
+            <a href="#grading">Grading System</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>RESOURCES</h3>
+            <a href="#resources">Lecture Notes</a>
+            <a href="#resources">Practice Problems</a>
+            <a href="#resources">Assignments</a>
+            <a href="#resources">References</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>CONTACT</h3>
+            <p>✉ yourname@school.edu</p>
+            <p>☎ +63 912 345 6789</p>
+            <p>⌖ Philippines</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>FOLLOW US</h3>
+            <p class="social">● &nbsp; ● &nbsp; ● &nbsp; ●</p>
+        </div>
+
+        <div class="copyright">
+            © 2026 DSA 101 - Data Structures and Algorithms. All rights reserved.
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
