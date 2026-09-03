@@ -132,7 +132,7 @@
                 <div class="side-category">
                     <a href="#p-introduction" class="category-link"><span>1. &nbsp; Introduction</span><span>⌄</span></a>
                     <div class="sub-links">
-                        <a href="#p-introduction">1.1 &nbsp; What is Data?</a>
+                        <a href="#p-introduction">1.1 &nbsp; What is DSA?</a>
                         <a href="#p-data">1.2 &nbsp; Data Structures</a>
                         <a href="#p-algorithms">1.3 &nbsp; Algorithms</a>
                         <a href="#p-complexity">1.4 &nbsp; Algorithm Complexity</a>
@@ -293,7 +293,7 @@
                 <p>The course is divided into three major parts: Prelims, Midterms, and Finals.</p>
                 <div class="outline-grid">
                     <div class="outline-box prelim-box"><h3>🖉 PRELIMS</h3><ol>
-                        <li><strong>Introduction to Data Structures and Algorithms</strong><ul><li>What is Data?</li><li>What is a Data Structure?</li><li>What is an Algorithm?</li><li>Algorithm Complexity</li><li>Time Complexity</li><li>Space Complexity</li></ul></li>
+                        <li><strong>Introduction to Data Structures and Algorithms</strong><ul><li>What is DSA?</li><li>What is a Data Structure?</li><li>What is an Algorithm?</li><li>Algorithm Complexity</li><li>Time Complexity</li><li>Space Complexity</li></ul></li>
                         <li><strong>Arrays</strong><ul><li>Introduction to Arrays</li><li>Creating &amp; Initializing Arrays</li><li>Access</li><li>Update</li><li>Traversal</li><li>Insertion</li><li>Deletion</li><li>Array Complexity</li></ul></li>
                         <li><strong>Searching Algorithms</strong><ul><li>Linear Search</li><li>Binary Search</li><li>Jump Search</li><li>Searching Comparison</li></ul></li>
                         <li><strong>Sorting Algorithms</strong><ul><li>Introduction to Sorting</li><li>Bubble Sort</li><li>Selection Sort</li><li>Insertion Sort</li><li>Merge Sort</li><li>Quick Sort</li><li>Sorting Comparison</li></ul></li>
@@ -338,7 +338,15 @@
                         data efficiently in a computer. In understanding DSA, it is essential to have a basic understanding of programming.
                     </p>
                     <br>
-
+                    <p>It is a fundamental area in Information Technology and Computer Science that focuses on:</p>
+                    <ul>
+                        <li>How data is organized and stored</li>
+                        <li>How data is accessed and manipulated</li>
+                        <li>How problems can be solved systematically</li>
+                        <li>How efficient solutions perform</li>
+                    </ul>
+                    <br>
+                    <p>In simplier terms, Data Structure determines how data is organized, while Algorithm determines how we process that data to solve a problem or perform a task.</p>
                     <div class="example">
                         <strong>Example:</strong>
                         <p>
@@ -356,6 +364,54 @@
                         <div><small>OUTPUT</small><strong>✓</strong></div>
                     </div>
 
+                    <h5>Why do we need DSA?</h5>
+                    <p>We need Data Structures and Algorithms (DSA) because they provide the core foundation for writing efficient code, solving complex computational problems, and building scalable software</p>
+                    <p>The way data is organized and the algorithm used to process, significantly affects the applications performance.</p>
+                    <br>
+                    <div class="example">
+                        <p>For Example, a school system may need to manage:</p>
+                        <ul>
+                            <li>10,000 Students</li>
+                            <li>50,000 Grades</li>
+                            <li>100,000 Attendance Records</li>
+                        </ul>
+                        <p>Simply storing the data is not enough. The program may need to: </p>
+                        <ul>
+                            <li>Find a student</li>
+                            <li>Add a new student</li>
+                            <li>Delete record</li>
+                            <li>Sort students</li>
+                            <li>Search for grades</li>
+                            <li>Calculate statistics</li>
+                            <li>Connect related records</li>
+                        </ul>
+                        <br>
+                        <p style="margin-left: 12px;"><i>Determining the appropriate Data Structure and Algorithm to use is essential in the program's performance.</i></p>
+                        <br>
+                        <p>Another real-life example: <b>Library System</b></p>
+                        <p>The system contains:</p>
+                        <ul>
+                            <li>Books</li>
+                            <li>Students</li>
+                            <li>Borrowing Records</li>
+                            <li>Return Dates</li>
+                        </ul>
+                        <p>The data can be organized using appropriate data strucutre.</p>
+                        <div>
+                            <p>Books</p>
+                            <p>↓</p>
+                            <p>Data Structure (Array / Linked List / Hash Table)</p>
+                            <p>↓</p>
+                            <p>Algorithm (Search for Book)</p>
+                            <p>↓</p>
+                            <p>Result</p>
+                        </div>
+                        <p>If a student searches for a book, the system needs an algorithm to locate it.</p>
+                        <p>If thousands of books exist, choosing an appropriate data structure and algorithm becomes important.</p>
+                        
+                    </div>
+                    
+                    <br>
                     <p>
                         <b>Data vs Information</b><br>
                         <b><i>Data</i></b> refers to raw facts and figures. <br><b><i>Information</i></b> is processed and
@@ -389,6 +445,22 @@
                     <p>
                         A <b>data structure</b> is a way of organizing and storing data so that we can use it efficiently in a computer.
                     </p>
+                    <br>
+                    <h5>Why are there different Data Structures</h5>
+                    <p>Different problems require different ways of organizing data.</p>
+                    <p>Consider the Following data:</p>
+                    <p><b>&emsp;&emsp;&emsp;&emsp;80, 76, 79, 83, 81</b></p>
+                    <ul>
+                        <li>An <b>array</b> is suitable when we want to store elements in an <u>indexed sequence</u>.</li>
+                        <li>But consider a browser's Back button.</li>
+                        <li>The <u>most recently visited page should be accessed first</u>.</li>
+                        <li>A <b>Stack</b> is appropriate for this situation.</li>
+                        <li>Another example is a customer waiting in line.</li>
+                        <li>The <u>first customer who arrives should generally be served first</u>.</li>
+                        <li>A <b>Queue</b> is appropriate.</li>
+                    </ul>
+                    <p>Therefore, different problems require different data structures</p>
+
                     <br>
                     <h5>Classification of Data Structure</h5>
                     <p>Data structures are commonly classified into two major categories: <b>Primitive</b> and <b>Non-Primitive</b></p>
@@ -424,32 +496,854 @@
                         <li>Graph</li>
                     </ul>
 
+                    <h5>Choosing a Data Structure</h5>
+                    <p>When choosing a data structure, consider:</p>
+                    <ul>
+                        <li>What type of data is being stored?</li>
+                        <li>How frequently will the data be accessed?</li>
+                        <li>Will data be inserted frequently?</li>
+                        <li>Will data be deleted frequently?</li>
+                        <li>Is fast searching required?</li>
+                        <li>How much memory is available?</li>
+                        <li>What relationships exist between the data?</li>
+                    </ul>
+                    <p>The goal is to choose a structure that makes the required operations efficient.</p>
+
                     <h4 id="p-algorithms">1.3 Algorithms</h4>
                     <p>
                         An algorithm is a step by step process, procedure or instruction to solve a problem or to perform or accomplish a specific task.
                     </p>
+                    <p>
+                        Algorithm tells the computer what steps to follow in order to get the desired result.
+                    </p>
+
+                    <div class="example">
+                        <strong>Example: <i>Find and Display the Largest Number</i></strong> 
+                        <p>
+                            <b>Given:</b> 25, 30, 28, 35, 32<br>
+                        </p>
+                        <p>
+                            <b>An Algorithm can be:</b><br>
+                        </p>
+                        <ol>
+                            <li>Start</li>
+                            <li>Assume the first number is the largest number</li>
+                            <li>Compare it to the next number</li>
+                            <li>If the next number if larger, make it the new largest number</li>
+                            <li>Continue until all numbers have been checked</li>
+                            <li>Display the largest number</li>
+                            <li>End</li>
+                        </ol>
+                        <p><b>Result:</b> 35</p>
+                        <h4><b>Note:</b> You have to first Understand the Problem or Task and come up with a Solution to solve it before writing it's algorithm.</h4>
+                        <video src="../../video/Algorithm.mp4" controls width="70%" style="margin-left: 15%;"></video>
+                    </div>
 
                     <h5>Characteristics of an Algorithm</h5>
                     <ul class="check-list">
-                        <li>Input: one or more inputs may be provided.</li>
-                        <li>Output: one or more outputs are produced.</li>
-                        <li>Definiteness: each step must be clear and unambiguous.</li>
-                        <li>Finiteness: the algorithm eventually terminates.</li>
-                        <li>Effectiveness: each step is practical and executable.</li>
+                        <li><b>Input:</b> one or more inputs may be provided.</li>
+                        <li><b>Output:</b> one or more outputs are produced.</li>
+                        <li><b>Definiteness:</b> each step must be clear and unambiguous.</li>
+                        <li><b>Finiteness:</b> the algorithm eventually terminates.</li>
+                        <li><b>Effectiveness:</b> each step is practical and executable.</li>
+                    </ul>
+
+                    <h4 style="margin-left: 24px;">Algorithm vs Pseudocode vs Program</h4>
+                    <p><b>Algorithm</b> is the step by step solution or logic using natural language, <b>Pseudocode</b> expresses the algorithm using structured elements that resembles a programming code but may use a natural language, while <b>Program</b> is the actual implementation of the algorithm using a programming language that is executable.</p>
+                    <div class="example-algorithm">
+                        <div class="ex">
+                            <strong>Algorithm Example:</strong>
+                            <p><strong>Algorithm: Find the Largest Number</strong></p>
+                            <p><b>Given:</b> [25, 30, 28, 35, 32]</p>
+                            <p>1. Start</p>
+                            <p>2. Gather Data</p>
+                            <p>3. Create variable named "Largest"</p>
+                            <p>4. Create variable named "Current"</p>
+                            <p>5. Set the first number as the initial value of Largest</p>
+                            <p>6. Set the second number as the initial value of Current</p>
+                            <p>7. Compare the value of Current to Largest</p>
+                            <p>8. If the Current is larger, make it the new value of Largest</p>
+                            <p>9. If not, the value of the Largest will retain</p>
+                            <p>10. Set the next number to the Current as the new value of the Current</p>
+                            <p>11. Repeat Steps 7 to 11, until the last number or until all numbers are checked</p>
+                            <p>12. Display the largest number</p>
+                            <p>13. End</p>
+                            <p><i><b>Largest →</b> stores the largest value found so far</i></p>
+                            <p><i><b>Current →</b> stores the value currently being examined</i></p>
+                        </div>
+                        <div class="ex">
+                            <strong>Pseudocode Example:</strong>
+                            <p><strong>Pseudocode: Find the Largest Number</strong></p>
+                            <p>BEGIN</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Numbers ← [25, 30, 28, 35, 32]</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;CREATE Largest</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;CREATE Current</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Largest ← first number</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Current ← second number</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;REPEAT for each remaining number</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF Current &gt; Largest THEN</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Largest ← Current</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END IF</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current ← next number</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;END REPEAT</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY Largest</p>
+                            <p>END</p>
+                        </div>
+                        <div class="ex">
+                            <strong>Program Example:</strong>
+                            <p><strong>Pseudocode: Find the Largest Number</strong></p>
+                            <p><strong>Programming Language: Java</strong></p>
+                            <p>public class LargestNumber {</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] numbers = {25, 30, 28, 35, 32};</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int Largest;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int Current;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Largest = numbers[0];</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current = numbers[1];</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt; numbers.length; i++) {</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current = numbers[i];</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Current &gt; Largest) {</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Largest = Current;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Largest number: " + Largest);</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                            <p>}</p>
+                            <p><strong>Output: Largest number: 35</strong></p>
+                        </div>
+                    </div>
+
+                    <h5>Common Algorithms</h5>
+                    <p>Searching</p>
+                    <ul>
+                        <li>Linear Search</li>
+                        <li>Binary Search</li>
+                        <li>Jump Search</li>
+                    </ul>
+                    <p>Sorting</p>
+                    <ul>
+                        <li>Bubble Sort</li>
+                        <li>Selection Sort</li>
+                        <li>Insertion Sort</li>
+                        <li>Merge Sort</li>
+                        <li>Quick Sort</li>
+                    </ul>
+                    <p>Tree and Graph Algorithms</p>
+                    <ul>
+                        <li>Tree Traversal</li>
+                        <li>Breadth-first Search</li>
+                        <li>Depth-first Search</li>
+                        <li>Dijkstra's Algorithm</li>
+                    </ul>
+                    <p>Advance Algorithms</p>
+                    <ul>
+                        <li>Recursion</li>
+                        <li>Divide and Conquer</li>
+                        <li>Dynamic Programming</li>
                     </ul>
 
                     <h4 id="p-complexity">1.4 Algorithm Complexity</h4>
+                    <h5>What is Algorithm Complexity?</h5>
                     <p>
-                        Algorithm complexity describes how an algorithm's resource requirements
+                        <b>Algorithm complexity</b> describes how an algorithm's resource requirements
                         change as the input size increases.
+                    </p>
+                    <p>The Two Primary Resources are:</p>
+                    <ul>
+                        <li>Time Complexity</li>
+                        <li>Space Complexity</li>
+                    </ul>
+                    <br>
+                    <p>The purpose is not usually to determine the exact number of seconds or bytes on a particular computer.</p>
+                    <p>Instead, we are going to understand <b>How does the algorithm's resource usage grow when the input becomes larger?</b></p>
+                    <br>
+                    <h5>Why is Algorithm Complexity Important?</h5>
+                    <p>
+                        Two algorithms can solve the same problem but may require different amounts of
+                        computational work.
+                    </p>
+                    <div class="example">
+                        <p>For example, suppose two algorithms solve the same problem:</p>
+                        <ul>
+                            <li>Algorithm A performs approximately 100 operations.</li>
+                            <li>Algorithm B performs approximately 1,000,000 operations.</li>
+                        </ul>
+                        <p>
+                            Both algorithms may produce the correct result, but Algorithm A may be
+                            significantly more efficient.
+                        </p>
+                        <p>
+                            The difference becomes more important as the input size becomes larger.
+                            An algorithm that works well with a small amount of data may become slow
+                            when it needs to process thousands or millions of records.
+                        </p>
+                        <p>
+                            Algorithm complexity helps programmers compare algorithms and choose
+                            solutions that can handle large amounts of data efficiently.
+                        </p>
+                    </div>
+                    
+                    <br>
+                    <h5>Input Size</h5>
+                    <p>
+                        The <b>input size</b> refers to the amount of data given to an algorithm.
+                        Input size is commonly represented by the variable <code>n</code>.
+                    </p>
+                    <div class="example">
+                        <p>For example, consider the following array:</p>
+                        <p><b>[25, 30, 28, 35, 32]</b></p>
+                        <p>The array contains five elements, therefore:</p>
+                        <p><b>n = 5</b></p>
+                        <p>
+                            If an array contains 1,000 elements, then <b>n = 1000</b>.
+                            Complexity analysis examines how the algorithm behaves as <code>n</code> increases.
+                        </p>
+                    </div>
+                    
+                    <br>
+                    <h5>Growth Rate</h5>
+                    <p>
+                        The <b>growth rate</b> describes how the amount of work performed by an
+                        algorithm increases as the input size increases.
+                    </p>
+                    <p>Common complexity classes include:</p>
+                    <ul>
+                        <li><b><code>O(1)</code></b> – Constant</li>
+                        <li><b><code>O(log n)</code></b> – Logarithmic</li>
+                        <li><b><code>O(n)</code></b> – Linear</li>
+                        <li><b><code>O(n log n)</code></b> – Linearithmic</li>
+                        <li><b><code>O(n²)</code></b> – Quadratic</li>
+                        <li><b><code>O(n³)</code></b> – Cubic</li>
+                        <li><b><code>O(2ⁿ)</code></b> – Exponential</li>
+                        <li><b><code>O(n!)</code></b> – Factorial</li>
+                    </ul>
+                    <br>
+                    <h5>Asymptotic Analysis</h5>
+                    <p>
+                        <b>Asymptotic analysis</b> is the study of how an algorithm behaves as
+                        the input size becomes very large. It is a technique used to analyze the efficiency and performance of an algorithm as the input size becomes larger.
+                    </p>
+                    <p>
+                        Instead of asking exactly how many seconds an algorithm takes on one
+                        particular computer, we focus on how the amount of work grows as the
+                        input size increases.
+                    </p>
+                    <p>
+                        This allows us to analyze algorithms without depending entirely on
+                        the speed of a particular computer.
+                    </p>
+                    <br>
+                    <h5>Big O Notation</h5>
+                    <p>
+                        <b>Big O notation</b> is commonly used to describe the asymptotic
+                        upper bound of an algorithm's growth.
+                    </p>
+                    <p>
+                        It allows programmers to describe and compare how algorithms behave
+                        as the input size becomes larger.
+                    </p>
+                    <p>Common Big O notations include:</p>
+                    <ul>
+                        <li><code>O(1)</code> – Constant</li>
+                        <li><code>O(log n)</code> – Logarithmic</li>
+                        <li><code>O(n)</code> – Linear</li>
+                        <li><code>O(n log n)</code> – Linearithmic</li>
+                        <li><code>O(n²)</code> – Quadratic</li>
+                        <li><code>O(n³)</code> – Cubic</li>
+                        <li><code>O(2ⁿ)</code> – Exponential</li>
+                        <li><code>O(n!)</code> – Factorial</li>
+                    </ul>
+                    <br>
+                    <h5>O(1) – Constant Time</h5>
+                    <p>
+                        <b>O(1)</b> means that the amount of work remains approximately constant
+                        regardless of the input size.
+                    </p>
+                    <p><b>Example:</b></p>
+                    <pre class="code"><code>int value = numbers[0];</code></pre>
+                    <p>
+                        The program accesses one specific array element directly.
+                        Whether the array contains 10 elements or 1,000,000 elements,
+                        accessing a particular element by index is typically a constant-time operation.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(1)</code></p>
+                    <br>
+                    <h5>O(log n) – Logarithmic Time</h5>
+                    <p>
+                        <b>O(log n)</b> means that the problem size is repeatedly reduced
+                        by a constant factor.
+                    </p>
+                    <p>
+                        A common example is <b>Binary Search</b>.
+                    </p>
+                    <p>Consider the sorted array:</p>
+                    <p><b>[10, 20, 30, 40, 50, 60, 70, 80]</b></p>
+                    <p>
+                        Binary Search repeatedly reduces the search space.
+                    </p>
+                    <ul>
+                        <li>8 possible elements</li>
+                        <li>Approximately 4 possible elements</li>
+                        <li>Approximately 2 possible elements</li>
+                        <li>Approximately 1 possible element</li>
+                    </ul>
+                    <p><b>Time Complexity:</b> <code>O(log n)</code></p>
+                    <p><b>Important:</b> Standard Binary Search requires the data to be sorted.</p>
+                    <br>
+                    <h5>O(n) – Linear Time</h5>
+                    <p>
+                        <b>O(n)</b> means that the amount of work grows proportionally
+                        to the input size.
+                    </p>
+                    <p><b>Example:</b></p>
+                    <pre class="code"><code>for (int i = 0; i &lt; numbers.length; i++) {
+                        System.out.println(numbers[i]);
+                    }</code></pre>
+                    <p>
+                        If there are 5 elements, the loop executes approximately 5 times.
+                        If there are 1,000 elements, it executes approximately 1,000 times.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>O(n log n) – Linearithmic Time</h5>
+                    <p>
+                        <b>O(n log n)</b> is called linearithmic complexity.
+                        This complexity commonly appears in efficient sorting algorithms.
+                    </p>
+                    <ul>
+                        <li>Merge Sort</li>
+                        <li>Average-case Quick Sort</li>
+                    </ul>
+                    <p><b>Typical Complexity:</b> <code>O(n log n)</code></p>
+                    <br>
+                    <h5>O(n²) – Quadratic Time</h5>
+                    <p>
+                        <b>O(n²)</b> means that the amount of work grows approximately
+                        as the square of the input size.
+                    </p>
+                    <p><b>Example:</b></p>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        for (int j = 0; j &lt; n; j++) {
+                            System.out.println(i + " " + j);
+                        }
+                    }</code></pre>
+                    <p>
+                        The outer loop executes <code>n</code> times. For every iteration
+                        of the outer loop, the inner loop also executes <code>n</code> times.
+                    </p>
+                    <p><code>n × n = n²</code></p>
+                    <p><b>Time Complexity:</b> <code>O(n²)</code></p>
+                    <p>Common examples include:</p>
+                    <ul>
+                        <li>Bubble Sort</li>
+                        <li>Selection Sort</li>
+                        <li>Insertion Sort in its average and worst cases</li>
+                    </ul>
+                    <br>
+                    <h5>O(n³) – Cubic Time</h5>
+                    <p>
+                        <b>O(n³)</b> commonly occurs when an algorithm contains three
+                        nested loops.
+                    </p>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        for (int j = 0; j &lt; n; j++) {
+                            for (int k = 0; k &lt; n; k++) {
+                                // operation
+                            }
+                        }
+                    }</code></pre>
+                    <p><code>n × n × n = n³</code></p>
+                    <p><b>Time Complexity:</b> <code>O(n³)</code></p>
+                    <br>
+                    <h5>O(2ⁿ) – Exponential Time</h5>
+                    <p>
+                        <b>O(2ⁿ)</b> is called exponential complexity.
+                        Exponential algorithms can grow extremely quickly as the input size increases.
+                    </p>
+                    <p>
+                        A classic example is a straightforward recursive implementation
+                        of the Fibonacci sequence that repeatedly solves the same subproblems.
+                    </p>
+                    <p><b>Typical Complexity:</b> <code>O(2ⁿ)</code></p>
+                    <br>
+                    <h5>O(n!) – Factorial Time</h5>
+                    <p>
+                        <b>O(n!)</b> is called factorial complexity.
+                        Factorial growth is extremely rapid and commonly appears in problems
+                        that require generating or examining all possible permutations.
+                    </p>
+                    <ul>
+                        <li><code>3! = 6</code></li>
+                        <li><code>4! = 24</code></li>
+                        <li><code>5! = 120</code></li>
+                        <li><code>6! = 720</code></li>
+                        <li><code>10! = 3,628,800</code></li>
+                    </ul>
+                    <p><b>Typical Complexity:</b> <code>O(n!)</code></p>
+                    <br>
+                    <h5>Complexity Ranking</h5>
+                    <p>
+                        The following is a useful general ordering from slower growth
+                        to faster growth:
+                    </p>
+                    <ul>
+                        <li><code>O(1)</code> – Constant</li>
+                        <li><code>O(log n)</code> – Logarithmic</li>
+                        <li><code>O(n)</code> – Linear</li>
+                        <li><code>O(n log n)</code> – Linearithmic</li>
+                        <li><code>O(n²)</code> – Quadratic</li>
+                        <li><code>O(n³)</code> – Cubic</li>
+                        <li><code>O(2ⁿ)</code> – Exponential</li>
+                        <li><code>O(n!)</code> – Factorial</li>
+                    </ul>
+                    <br>
+                    <h5>Best Case</h5>
+                    <p>
+                        The <b>best case</b> represents the most favorable situation
+                        for an algorithm.
+                    </p>
+                    <p>
+                        For example, in Linear Search, if the target is the first element,
+                        only one comparison may be required.
+                    </p>
+                    <p><b>Best Case:</b> <code>O(1)</code></p>
+                    <br>
+                    <h5>Worst Case</h5>
+                    <p>
+                        The <b>worst case</b> represents the least favorable situation
+                        for an algorithm.
+                    </p>
+                    <p>
+                        If the target is the last element, or if the target does not exist,
+                        the algorithm may need to examine every element.
+                    </p>
+                    <p><b>Worst Case:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Average Case</h5>
+                    <p>
+                        The <b>average case</b> describes the expected performance of an
+                        algorithm over typical inputs under an assumed input distribution.
+                    </p>
+                    <p><b>Average Case:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Big O, Big Omega, and Big Theta</h5>
+                    <p>
+                        There are three important asymptotic notations commonly discussed
+                        in algorithm analysis.
+                    </p>
+                    <ul>
+                        <li><b>Big O – O</b>: Describes an asymptotic upper bound.</li>
+                        <li><b>Big Omega – Ω</b>: Describes an asymptotic lower bound.</li>
+                        <li><b>Big Theta – Θ</b>: Describes a tight asymptotic bound.</li>
+                    </ul>
+                    <p>
+                        For beginners, <b>Big O</b> is usually the most important notation
+                        to understand first.
+                    </p>
+                    <br>
+                    <h5>Big O Does Not Represent Exact Execution Time</h5>
+                    <p>
+                        Big O does not mean the exact number of seconds an algorithm takes
+                        to execute.
+                    </p>
+                    <p>
+                        For example, <code>O(n)</code> does not mean that an algorithm takes
+                        exactly <code>n</code> seconds.
+                    </p>
+                    <p>
+                        Instead, Big O describes how the computational work grows as the
+                        input size increases.
                     </p>
 
                     <h4 id="p-time-space">1.5 Time &amp; Space Complexity</h4>
                     <p>
-                        Time complexity measures execution growth, while space complexity measures
-                        the additional memory required. Big O notation is commonly used to
-                        describe algorithm efficiency.
+                        <b>Time complexity</b> measures how the computational work of an algorithm
+                        grows as the input size increases, while <b>space complexity</b> measures
+                        how the memory requirements of an algorithm grow as the input size increases.
                     </p>
+                    <p>In simple terms:</p>
+                    <ul>
+                        <li><b>Time:</b> How much computational work does the algorithm perform?</li>
+                        <li><b>Space:</b> How much memory does the algorithm require?</li>
+                    </ul>
+                    <br>
+                    <h5>What is Time Complexity?</h5>
+                    <p>
+                        <b>Time complexity</b> describes how the amount of computational work
+                        performed by an algorithm grows as the input size increases.
+                    </p>
+                    <p>
+                        Time complexity is commonly expressed using Big O notation.
+                    </p>
+                    <p>
+                        It does not normally refer to the exact number of seconds required
+                        by a program because actual execution time depends on hardware,
+                        programming language, implementation, compiler, and system environment.
+                    </p>
+                    <p>
+                        Instead, we focus on the growth of the work performed by the algorithm.
+                    </p>
+                    <br>
+                    <h5>Example 1: Constant Time – O(1)</h5>
+                    <pre class="code"><code>int value = numbers[0];</code></pre>
+                    <p>
+                        The program accesses one specific element directly.
+                        It does not need to inspect every element in the array.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(1)</code></p>
+                    <br>
+                    <h5>Example 2: Linear Time – O(n)</h5>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        System.out.println(i);
+                    }</code></pre>
+                    <p>
+                        The loop executes approximately <code>n</code> times.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Example 3: Quadratic Time – O(n²)</h5>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        for (int j = 0; j &lt; n; j++) {
+                            System.out.println(i + j);
+                        }
+                    }</code></pre>
+                    <p>
+                        The outer loop runs <code>n</code> times. For every iteration
+                        of the outer loop, the inner loop also runs <code>n</code> times.
+                    </p>
+                    <p><code>n × n = n²</code></p>
+                    <p><b>Time Complexity:</b> <code>O(n²)</code></p>
+                    <br>
+                    <h5>Example 4: Cubic Time – O(n³)</h5>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        for (int j = 0; j &lt; n; j++) {
+                            for (int k = 0; k &lt; n; k++) {
+                                // operation
+                            }
+                        }
+                    }</code></pre>
+                    <p>
+                        There are three nested loops, each performing approximately
+                        <code>n</code> iterations.
+                    </p>
+                    <p><code>n × n × n = n³</code></p>
+                    <p><b>Time Complexity:</b> <code>O(n³)</code></p>
+                    <br>
+                    <h5>Sequential Loops</h5>
+                    <p>
+                        When loops are executed one after another rather than nested inside
+                        each other, their work is generally added.
+                    </p>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        // operation
+                    }
+                    for (int j = 0; j &lt; n; j++) {
+                        // operation
+                    }</code></pre>
+                    <p>
+                        The total work is approximately:
+                    </p>
+                    <p><code>n + n = 2n</code></p>
+                    <p>
+                        Ignoring the constant factor:
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n)</code></p>
+                    <p>
+                        <b>Important:</b> Sequential operations are generally added,
+                        while nested loops are generally multiplied.
+                    </p>
+                    <br>
+                    <h5>Different Input Sizes</h5>
+                    <p>
+                        Sometimes an algorithm processes two different inputs.
+                    </p>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        // operation
+                    }
+                    for (int j = 0; j &lt; m; j++) {
+                        // operation
+                    }</code></pre>
+                    <p>
+                        The first loop performs approximately <code>n</code> operations,
+                        while the second performs approximately <code>m</code> operations.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n + m)</code></p>
+                    <p>If the loops are nested:</p>
+                    <pre class="code"><code>for (int i = 0; i &lt; n; i++) {
+                        for (int j = 0; j &lt; m; j++) {
+                            // operation
+                        }
+                    }</code></pre>
+                    <p><b>Time Complexity:</b> <code>O(n × m)</code></p>
+                    <br>
+                    <h5>Ignoring Constants</h5>
+                    <p>
+                        When analyzing Big O, constant factors are normally ignored.
+                    </p>
+                    <p><code>3n</code> becomes <code>O(n)</code>.</p>
+                    <p><code>5n + 10</code> also becomes <code>O(n)</code>.</p>
+                    <p>
+                        Big O focuses on the growth rate as the input size becomes large.
+                    </p>
+                    <br>
+                    <h5>Ignoring Lower-Order Terms</h5>
+                    <p>
+                        When an expression contains multiple terms, we normally keep
+                        the dominant term.
+                    </p>
+                    <p><code>n² + n + 10</code></p>
+                    <p>
+                        The dominant term is <code>n²</code>, therefore:
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n²)</code></p>
+                    <p><code>n³ + n² + n + 100</code></p>
+                    <p>
+                        The dominant term is <code>n³</code>, therefore:
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n³)</code></p>
+                    <br>
+                    <h5>What is Space Complexity?</h5>
+                    <p>
+                        <b>Space complexity</b> describes how the memory requirements of
+                        an algorithm grow as the input size increases.
+                    </p>
+                    <p>Memory may be required for:</p>
+                    <ul>
+                        <li>Variables</li>
+                        <li>Arrays</li>
+                        <li>Objects</li>
+                        <li>Data structures</li>
+                        <li>Recursive function calls</li>
+                        <li>Temporary data</li>
+                    </ul>
+                    <br>
+                    <h5>Auxiliary Space</h5>
+                    <p>
+                        <b>Auxiliary space</b> refers to the additional memory used by an
+                        algorithm while it is executing, excluding the input itself when
+                        the input is treated as already provided.
+                    </p>
+                    <br>
+                    <h5>Example 1: Constant Space – O(1)</h5>
+                    <pre class="code"><code>int largest;
+                    int current;
+                    int index;</code></pre>
+                    <p>
+                        Only a fixed number of variables are created.
+                        The number of variables does not increase when the input size increases.
+                    </p>
+                    <p><b>Auxiliary Space Complexity:</b> <code>O(1)</code></p>
+                    <br>
+                    <h5>Example 2: Linear Space – O(n)</h5>
+                    <pre class="code"><code>int[] copy = new int[n];</code></pre>
+                    <p>
+                        The new array contains <code>n</code> elements.
+                        As <code>n</code> increases, the amount of memory required also increases.
+                    </p>
+                    <p><b>Space Complexity:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Example 3: Quadratic Space – O(n²)</h5>
+                    <pre class="code"><code>int[][] matrix = new int[n][n];</code></pre>
+                    <p>
+                        The two-dimensional array contains approximately <code>n × n = n²</code>
+                        elements.
+                    </p>
+                    <p><b>Space Complexity:</b> <code>O(n²)</code></p>
+                    <br>
+                    <h5>Time and Space Example</h5>
+                    <p>Consider the following program:</p>
+                    <pre class="code"><code>int[] copy = new int[n];
+
+                    for (int i = 0; i &lt; n; i++) {
+                        copy[i] = numbers[i];
+                    }</code></pre>
+                    <p>
+                        The loop executes <code>n</code> times.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n)</code></p>
+                    <p>
+                        The program also creates a new array containing <code>n</code> elements.
+                    </p>
+                    <p><b>Space Complexity:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Finding the Largest Number</h5>
+                    <p>Consider the following data:</p>
+                    <p><b>[25, 30, 28, 35, 32]</b></p>
+                    <p>The algorithm examines the numbers one by one.</p>
+                    <ul>
+                        <li>Largest = 25</li>
+                        <li>Compare 30 → Largest becomes 30</li>
+                        <li>Compare 28 → Largest remains 30</li>
+                        <li>Compare 35 → Largest becomes 35</li>
+                        <li>Compare 32 → Largest remains 35</li>
+                    </ul>
+                    <p>
+                        Every element must be examined to guarantee that the largest number
+                        has been found.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n)</code></p>
+                    <p>
+                        The algorithm uses only a fixed number of additional variables,
+                        such as <code>Largest</code> and <code>Current</code>.
+                    </p>
+                    <p><b>Auxiliary Space Complexity:</b> <code>O(1)</code></p>
+                    <br>
+                    <h5>Linear Search Example</h5>
+                    <p>Consider the array:</p>
+                    <p><b>[25, 30, 28, 35, 32]</b></p>
+                    <p>Suppose we want to search for <code>35</code>.</p>
+                    <p>The algorithm checks the elements one by one:</p>
+                    <ul>
+                        <li>25 → Not found</li>
+                        <li>30 → Not found</li>
+                        <li>28 → Not found</li>
+                        <li>35 → Found</li>
+                    </ul>
+                    <p>
+                        The number of comparisons depends on where the target is located.
+                    </p>
+                    <br>
+                    <h5>Linear Search – Best Case</h5>
+                    <p>
+                        If the target is the first element, only one comparison may be required.
+                    </p>
+                    <p><b>Best Case:</b> <code>O(1)</code></p>
+                    <br>
+                    <h5>Linear Search – Worst Case</h5>
+                    <p>
+                        If the target is the last element, or if the target does not exist,
+                        the algorithm may need to examine every element.
+                    </p>
+                    <p><b>Worst Case:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Linear Search – Average Case</h5>
+                    <p>
+                        For typical inputs, the number of comparisons grows proportionally
+                        with the number of elements.
+                    </p>
+                    <p><b>Average Case:</b> <code>O(n)</code></p>
+                    <br>
+                    <h5>Binary Search Example</h5>
+                    <p>Binary Search works on sorted data.</p>
+                    <p><b>[10, 20, 30, 40, 50, 60, 70, 80]</b></p>
+                    <p>
+                        Instead of checking every element, Binary Search repeatedly reduces
+                        the search space.
+                    </p>
+                    <ul>
+                        <li>Start with 8 possible elements.</li>
+                        <li>Reduce the possible search area to approximately 4 elements.</li>
+                        <li>Reduce it to approximately 2 elements.</li>
+                        <li>Reduce it to approximately 1 element.</li>
+                    </ul>
+                    <p><b>Time Complexity:</b> <code>O(log n)</code></p>
+                    <br>
+                    <h5>Sorting Example</h5>
+                    <p>
+                        Sorting algorithms arrange data into a particular order, such as
+                        ascending or descending order.
+                    </p>
+                    <p><b>[5, 3, 4, 1, 2]</b></p>
+                    <p>can be sorted into:</p>
+                    <p><b>[1, 2, 3, 4, 5]</b></p>
+                    <p>
+                        Different sorting algorithms have different complexity characteristics.
+                    </p>
+                    <ul>
+                        <li><b>Bubble Sort:</b> typically <code>O(n²)</code></li>
+                        <li><b>Selection Sort:</b> <code>O(n²)</code></li>
+                        <li><b>Insertion Sort:</b> <code>O(n²)</code> average and worst case</li>
+                        <li><b>Merge Sort:</b> <code>O(n log n)</code></li>
+                        <li><b>Quick Sort:</b> <code>O(n log n)</code> average and <code>O(n²)</code> worst case</li>
+                    </ul>
+                    <br>
+                    <h5>Time-Space Trade-Off</h5>
+                    <p>
+                        A <b>time-space trade-off</b> occurs when an algorithm uses additional
+                        memory to potentially improve execution time.
+                    </p>
+                    <p>
+                        For example, a hash table uses additional memory to store its data
+                        but can provide very fast average-case lookup.
+                    </p>
+                    <p><b>More memory → potentially faster operations</b></p>
+                    <p>
+                        However, using more memory is not always desirable. Programmers must
+                        consider the requirements and limitations of the application.
+                    </p>
+                    <br>
+                    <h5>Common Data Structure Operation Complexities</h5>
+                    <ul>
+                        <li><b>Array Access by Index:</b> <code>O(1)</code></li>
+                        <li><b>Array Search:</b> <code>O(n)</code></li>
+                        <li><b>Array Traversal:</b> <code>O(n)</code></li>
+                        <li><b>Linked List Access by Position:</b> <code>O(n)</code></li>
+                        <li><b>Linked List Search:</b> <code>O(n)</code></li>
+                        <li><b>Stack Push:</b> <code>O(1)</code></li>
+                        <li><b>Stack Pop:</b> <code>O(1)</code></li>
+                        <li><b>Stack Peek:</b> <code>O(1)</code></li>
+                        <li><b>Queue Enqueue:</b> <code>O(1)</code></li>
+                        <li><b>Queue Dequeue:</b> <code>O(1)</code></li>
+                        <li><b>Hash Table Search:</b> <code>O(1)</code> average</li>
+                        <li><b>Hash Table Insert:</b> <code>O(1)</code> average</li>
+                        <li><b>Hash Table Delete:</b> <code>O(1)</code> average</li>
+                    </ul>
+                    <br>
+                    <h5>Quick Reference</h5>
+                    <ul>
+                        <li><code>O(1)</code> – Constant</li>
+                        <li><code>O(log n)</code> – Logarithmic</li>
+                        <li><code>O(n)</code> – Linear</li>
+                        <li><code>O(n log n)</code> – Linearithmic</li>
+                        <li><code>O(n²)</code> – Quadratic</li>
+                        <li><code>O(n³)</code> – Cubic</li>
+                        <li><code>O(2ⁿ)</code> – Exponential</li>
+                        <li><code>O(n!)</code> – Factorial</li>
+                    </ul>
+                    <br>
+                    <h5>Key Difference Between Time and Space Complexity</h5>
+                    <p>
+                        <b>Time Complexity</b> focuses on how the amount of computational
+                        work grows as the input size increases.
+                    </p>
+                    <p>
+                        <b>Space Complexity</b> focuses on how the amount of memory required
+                        by the algorithm grows as the input size increases.
+                    </p>
+                    <p><b>Time = How much work?</b></p>
+                    <p><b>Space = How much memory?</b></p>
+                    <br>
+                    <h5>Final Example</h5>
+                    <p>
+                        Consider an algorithm that finds the largest number in an array.
+                    </p>
+                    <p><b>[25, 30, 28, 35, 32]</b></p>
+                    <p>
+                        The algorithm must examine each element to guarantee that it finds
+                        the largest value.
+                    </p>
+                    <p><b>Time Complexity:</b> <code>O(n)</code></p>
+                    <p>
+                        The algorithm only needs a fixed number of additional variables,
+                        such as <code>Largest</code> and <code>Current</code>.
+                    </p>
+                    <p><b>Auxiliary Space Complexity:</b> <code>O(1)</code></p>
+                    <p><b>Time = O(n)</b></p>
+                    <p><b>Auxiliary Space = O(1)</b></p>
                 </article>
 
                 <article class="lesson" id="p-arrays">
