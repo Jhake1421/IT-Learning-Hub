@@ -754,6 +754,41 @@ a {
     font-family: Consolas, monospace;
     font-size: 10px;
 }
+.example ol{
+    font-size: 12px;
+    margin-left: 48px;
+}
+.example h4{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+.example-algorithm{
+    margin: 12px 0;
+    padding: 9px;
+    border-left: 3px solid #83aeff;
+    border-radius: 4px;
+    background: var(--blue-light);
+    display: flex;
+}
+.example-algorithm .ex{
+    flex: 1;
+    border: 1px solid lightgray;
+    padding: 12px;
+    border-radius: 4px;
+}
+.example div{
+    width: 50%;
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-left: 5%;
+}
+.example div p{
+    margin: 0;
+    font-weight: bolder;
+}
 
 /*Midterm Section*/
 
