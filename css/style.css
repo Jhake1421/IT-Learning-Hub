@@ -87,7 +87,8 @@ a {
     font-weight: bold;
 }
 .logo img{
-    width: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 .brand-text strong {
@@ -311,6 +312,7 @@ a {
 }
 .image-placeholder img{
     width: 40%;
+    height: 80%;
 }
 
 .text-placeholder {
