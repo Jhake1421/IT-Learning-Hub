@@ -1282,10 +1282,15 @@ a {
     .copyright {
         font-size: 8px;
     }
+    .example-algorithm{
+        display: block;
+    }
 }
 
 @media (max-width: 430px) {
-
+    .example-algorithm{
+        display: block;
+    }
     .hero {
         min-height: 420px;
     }
