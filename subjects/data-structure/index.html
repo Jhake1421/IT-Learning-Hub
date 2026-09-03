@@ -3,15 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA 101 | Data Structures and Algorithms</title>
+
+    <!-- SEO -->
+    <title>Data Structures and Algorithms Notes | DSA 101 | IT Learning Hub</title>
+
+    <meta name="description"
+        content="Learn Data Structures and Algorithms with organized notes covering arrays, searching, sorting, linked lists, stacks, queues, hash tables, trees, graphs, and advanced algorithms.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://it-learning-hub-eosin.vercel.app/subjects/data-structure/">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Data Structures and Algorithms Notes | DSA 101">
+
+    <meta property="og:description"
+        content="Learn Data Structures and Algorithms through organized lessons covering arrays, searching, sorting, linked lists, stacks, queues, hashing, trees, graphs, and advanced algorithms.">
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:url"
+        content="https://it-learning-hub-eosin.vercel.app/subjects/data-structure/">
+
+    <meta property="og:image"
+        content="https://it-learning-hub-eosin.vercel.app/images/logo.png">
+
+    <meta property="og:image:alt"
+        content="IT Learning Hub logo">
+
+    <meta property="og:site_name"
+        content="IT Learning Hub">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="Data Structures and Algorithms Notes | DSA 101">
+
+    <meta name="twitter:description"
+        content="Organized Data Structures and Algorithms notes covering fundamental concepts, arrays, searching, sorting, linked lists, stacks, queues, hashing, trees, graphs, and advanced algorithms.">
+
+    <meta name="twitter:image"
+        content="https://it-learning-hub-eosin.vercel.app/images/logo.png">
+
+    <meta name="twitter:image:alt"
+        content="IT Learning Hub logo">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Course structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Data Structures and Algorithms",
+        "description": "A course covering fundamental data structures and algorithms, including arrays, searching, sorting, linked lists, stacks, queues, hash tables, trees, graphs, recursion, divide and conquer, and dynamic programming.",
+        "url": "https://it-learning-hub-eosin.vercel.app/subjects/data-structure/",
+        "provider": {
+            "@type": "Organization",
+            "name": "IT Learning Hub",
+            "url": "https://it-learning-hub-eosin.vercel.app/"
+        },
+        "inLanguage": "en",
+        "educationalLevel": "College"
+    }
+    </script>
 </head>
 <body id="top">
 
     <!-- HEADER -->
     <header class="header">
         <div class="brand-area">
-            <button class="hamburger" id="menuButton" aria-label="Open menu">☰</button>
+            <button class="hamburger" id="menuButton" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
 
             <a href="#overview" class="brand">
                 <span class="logo">&lt;/&gt;</span>
@@ -32,49 +101,6 @@
             <a href="#grading">Grading System</a>
         </nav>
     </header>
-
-    <!-- Mobile navigation overlay.
-         It combines the desktop top navigation and subject navigation. -->
-    <div class="mobile-menu-panel" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <strong>COURSE NAVIGATION</strong>
-            <button id="closeMenu" aria-label="Close menu">×</button>
-        </div>
-
-        <nav class="mobile-top-links">
-            <a href="../../index.html">IT Learning Hub</a>
-            <a href="#overview">Overview</a>
-            <a href="#prelims">Prelims</a>
-            <a href="#midterms">Midterms</a>
-            <a href="#finals">Finals</a>
-            <a href="#grading">Grading System</a>
-        </nav>
-
-        <div class="mobile-subject-navigation">
-            <p>SUBJECT CONTENT</p>
-            <a href="#overview">⌂ &nbsp; Overview</a>
-
-            <h4>PRELIMS</h4>
-            <a href="#p-introduction">1. Introduction</a>
-            <a href="#p-arrays">2. Arrays</a>
-            <a href="#p-searching">3. Searching</a>
-            <a href="#p-sorting">4. Sorting</a>
-
-            <h4>MIDTERMS</h4>
-            <a href="#m-linked">1. Linked Lists</a>
-            <a href="#m-stacks">2. Stacks</a>
-            <a href="#m-queues">3. Queues</a>
-            <a href="#m-hashing">4. Hash Tables</a>
-
-            <h4>FINALS</h4>
-            <a href="#f-trees">1. Trees</a>
-            <a href="#f-graphs">2. Graphs</a>
-            <a href="#f-advanced">3. Advanced Topics</a>
-
-            <a href="#grading" class="mobile-extra">⚖ &nbsp; Grading System</a>
-            <a href="#resources" class="mobile-extra">▣ &nbsp; Resources</a>
-        </div>
-    </div>
 
     <!-- Mobile navigation overlay.
          It combines the desktop top navigation and subject navigation. -->
@@ -218,7 +244,7 @@
             <section class="hero" id="overview">
                 <div class="hero-text">
                     <p>Welcome to</p>
-                    <h1>Data Structures<br>and Algorithms</h1>
+                    <h1>Data Structures and Algorithms</h1>
                     <span>Master efficient data organization and problem-solving techniques to build better programs and solve real-world challenges.</span>
                     <a href="#prelims" class="button">Start Learning &nbsp; →</a>
                 </div>
@@ -315,7 +341,7 @@
             <!-- PRELIMS -->
             <section class="topic-section prelim-section" id="prelims">
                 <div class="section-heading">
-                    <span><img src="../../images/logo2.png"></span>
+                    <span><img src="../../images/logo2.png" alt="IT Learning Hub section icon"></span>
                     <div>
                         <h2>Topics in Prelims</h2>
                         <p>Introduction, arrays, searching, and sorting.</p>
@@ -1402,7 +1428,7 @@
             <!-- MIDTERMS -->
             <section class="topic-section mid-section" id="midterms">
                 <div class="section-heading">
-                    <span><img src="../../images/logo2.png"></span>
+                    <span><img src="../../images/logo2.png" alt="IT Learning Hub section icon"></span>
                     <div>
                         <h2>Topics in Midterms</h2>
                         <p>Linked lists, stacks, queues, and hash tables.</p>
@@ -1422,7 +1448,7 @@
             <!-- FINALS -->
             <section class="topic-section final-section" id="finals">
                 <div class="section-heading">
-                    <span><img src="../../images/logo2.png"></span>
+                    <span><img src="../../images/logo2.png" alt="IT Learning Hub section icon"></span>
                     <div>
                         <h2>Topics in Finals</h2>
                         <p>Trees, graphs, recursion, and advanced algorithms.</p>
@@ -1478,8 +1504,8 @@
                 <h2>Resources</h2>
 
                 <div class="resource-grid">
-                    <a href="https://www.w3schools.com/dsa/" target="_blank">W3Schools DSA <span>↗</span></a>
-                    <a href="https://www.w3schools.com/dsa/dsa_syllabus.php" target="_blank">DSA Syllabus <span>↗</span></a>
+                    <a href="https://www.w3schools.com/dsa/" target="_blank" rel="noopener noreferrer">W3Schools Data Structures and Algorithms <span>↗</span></a>
+                    <a href="https://www.w3schools.com/dsa/dsa_syllabus.php" target="_blank" rel="noopener noreferrer">Data Structures and Algorithms Syllabus <span>↗</span></a>
                     <a href="#">Lecture Notes <span>→</span></a>
                     <a href="#">Practice Problems <span>→</span></a>
                 </div>
@@ -1532,6 +1558,8 @@
 
         <div class="copyright">
             © 2026 DSA 101 - Data Structures and Algorithms. All rights reserved.
+            &nbsp; | &nbsp;
+            <a href="../../index.html">IT Learning Hub</a>
         </div>
     </footer>
 
@@ -1539,9 +1567,9 @@
 
     <script src="js/script.js"></script>
     <script>
-      window.va = window.va || function () {
+    window.va = window.va || function () {
         (window.vaq = window.vaq || []).push(arguments);
-      };
+    };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
 </body>
