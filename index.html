@@ -1,60 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT Learning Hub - Simple and organized subject notes for Information Technology students.">
-    <title>IT Learning Hub</title>
+
+    <!-- SEO -->
+    <title>IT Learning Hub | IT Notes, Programming & Web Development</title>
+
+    <meta name="description"
+        content="IT Learning Hub provides organized Information Technology notes, programming lessons, data structures, web development resources, and study materials for IT students.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://it-learning-hub-eosin.vercel.app/">
+
+    <!-- Open Graph / Facebook / Messenger -->
+    <meta property="og:title" content="IT Learning Hub | IT Notes & Learning Resources">
+    <meta property="og:description"
+        content="Learn Information Technology through organized notes, programming lessons, web development resources, and practical study materials.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://it-learning-hub-eosin.vercel.app/">
+    <meta property="og:image" content="https://it-learning-hub-eosin.vercel.app/images/logo.png">
+    <meta property="og:image:alt" content="IT Learning Hub logo">
+    <meta property="og:site_name" content="IT Learning Hub">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IT Learning Hub | IT Notes & Learning Resources">
+    <meta name="twitter:description"
+        content="Learn Information Technology through organized notes, programming lessons, web development resources, and practical study materials.">
+    <meta name="twitter:image" content="https://it-learning-hub-eosin.vercel.app/images/logo.png">
+    <meta name="twitter:image:alt" content="IT Learning Hub logo">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body id="top">
 
     <!-- HEADER -->
     <header class="header">
-        <div class="brand-area">
-            <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
 
-            <a href="#home" class="brand">
-                <span class="logo"><img src="images/logo.png"></span>
+        <div class="brand-area">
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-controls="mobileMenu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <a href="#home" class="brand" aria-label="IT Learning Hub Home">
+
+                <span class="logo">
+                    <img
+                        src="images/logo.png"
+                        alt="IT Learning Hub logo"
+                        width="50"
+                        height="50">
+                </span>
+
                 <span class="brand-text">
                     <strong>IT LEARNING HUB</strong>
                     <small>Learn. Review. Understand.</small>
                 </span>
+
             </a>
+
         </div>
 
-        <nav class="top-nav" id="topNav">
+        <nav class="top-nav" id="topNav" aria-label="Main navigation">
+
             <a href="#home" class="active">Home</a>
             <a href="#subjects">Subjects</a>
             <a href="#about">About</a>
+
         </nav>
 
     </header>
 
+
     <!-- MOBILE NAVIGATION -->
     <div class="mobile-menu" id="mobileMenu">
+
         <div class="mobile-menu-header">
+
             <strong>MENU</strong>
-            <button id="closeMenu" aria-label="Close navigation">×</button>
+
+            <button
+                id="closeMenu"
+                aria-label="Close navigation">
+                ×
+            </button>
+
         </div>
 
-        <nav>
+        <nav aria-label="Mobile navigation">
+
             <a href="#home">Home</a>
             <a href="#subjects">Subjects</a>
             <a href="#about">About</a>
+
         </nav>
+
     </div>
+
 
     <main>
 
         <!-- HERO -->
         <section class="hero" id="home">
+
             <div class="hero-content">
+
                 <span class="eyebrow">WELCOME TO</span>
 
                 <h1>IT Learning Hub</h1>
 
-                <h2>Your simple and organized platform for Information Technology subject notes.</h2>
+                <p class="hero-subtitle">
+                    Your simple and organized platform for Information Technology subject notes.
+                </p>
 
                 <p>
                     Browse subjects and access well-structured notes anytime,
@@ -62,12 +133,22 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#subjects" class="button primary-button">Explore Subjects</a>
+
+                    <a
+                        href="#subjects"
+                        class="button primary-button">
+                        Explore Subjects
+                    </a>
+
                 </div>
+
             </div>
 
+
             <div class="hero-illustration">
+
                 <div class="browser-window">
+
                     <div class="browser-bar">
                         <span></span>
                         <span></span>
@@ -75,141 +156,316 @@
                     </div>
 
                     <div class="browser-content">
-                        <div class="image-placeholder"><img src="images/logo.png"></div>
+
+                        <div class="image-placeholder">
+
+                            <img
+                                src="images/logo.png"
+                                alt="IT Learning Hub educational platform logo"
+                                width="120"
+                                height="120">
+
+                        </div>
+
                         <div class="text-placeholder">
+
                             <i>IT Learning Hub</i>
+
                             <p>Learn</p>
                             <p>Review</p>
-                            <p>Understand</>
+                            <p>Understand</p>
+
                         </div>
+
                     </div>
+
                 </div>
 
                 <div class="book book-one"></div>
                 <div class="book book-two"></div>
+
             </div>
+
         </section>
 
+
         <!-- SUBJECTS -->
-        <section class="section subjects-section" id="subjects">
+        <section
+            class="section subjects-section"
+            id="subjects"
+            aria-labelledby="subjects-title">
+
             <div class="section-title">
-                <span>BROWSE OUR SUBJECTS</span>
-                <a href="#subjects">View All Subjects →</a>
+
+                <div>
+                    <span>BROWSE OUR SUBJECTS</span>
+                    <h2 id="subjects-title">
+                        Information Technology Subjects
+                    </h2>
+                </div>
+
+                <a href="#subjects">
+                    View All Subjects →
+                </a>
+
             </div>
+
 
             <div class="subject-grid">
 
-                <!-- Connect this link to your DSA website -->
+                <!-- DATA STRUCTURES AND ALGORITHMS -->
                 <article class="subject-card dsa-card">
-                    <div class="subject-icon">&lt;/&gt;</div>
+
+                    <div
+                        class="subject-icon"
+                        aria-hidden="true">
+                        &lt;/&gt;
+                    </div>
 
                     <div class="subject-content">
-                        <h3>Data Structures<br>and Algorithms</h3>
+
+                        <h3>
+                            Data Structures<br>
+                            and Algorithms
+                        </h3>
 
                         <p>
                             Learn fundamental data structures and algorithmic
-                            problem-solving techniques.
+                            problem-solving techniques, including arrays,
+                            searching, sorting, linked lists, stacks, queues,
+                            hash tables, trees, and graphs.
                         </p>
 
-                        <a href="subjects/data-structure/index.html" class="subject-link">
+                        <a
+                            href="subjects/data-structure/index.html"
+                            class="subject-link"
+                            aria-label="View Data Structures and Algorithms notes">
+
                             View Notes →
+
                         </a>
+
                     </div>
+
                 </article>
 
-                <!-- Replace this link with your Web Design website later -->
+
+                <!-- WEB DESIGN -->
                 <article class="subject-card web-card">
-                    <div class="subject-icon">▤</div>
+
+                    <div
+                        class="subject-icon"
+                        aria-hidden="true">
+                        ▤
+                    </div>
 
                     <div class="subject-content">
+
                         <h3>Web Design</h3>
 
                         <p>
-                            Learn HTML, CSS and modern web design principles
-                            to build beautiful websites.
+                            Learn HTML, CSS, JavaScript, responsive design,
+                            and modern web design principles to build
+                            functional and beautiful websites.
                         </p>
 
-                        <a href="subjects/web-design/index.html" class="subject-link">
+                        <a
+                            href="subjects/web-design/index.html"
+                            class="subject-link"
+                            aria-label="View Web Design notes">
+
                             View Notes →
+
                         </a>
+
                     </div>
+
                 </article>
 
             </div>
+
         </section>
 
 
         <!-- ABOUT -->
-        <section class="section about-section" id="about">
+        <section
+            class="section about-section"
+            id="about"
+            aria-labelledby="about-title">
+
             <div class="about-content">
-                <span class="eyebrow">ABOUT THE HUB</span>
-                <h2>Simple notes. Easy access. Focused learning.</h2>
+
+                <span class="eyebrow">
+                    ABOUT THE HUB
+                </span>
+
+                <h2 id="about-title">
+                    Simple notes. Easy access. Focused learning.
+                </h2>
+
                 <p>
-                    IT Learning Hub is an informational website created to
-                    organize and provide subject notes for Information
-                    Technology students in one convenient place.
+                    IT Learning Hub is an informational learning website
+                    created to organize and provide subject notes for
+                    Information Technology students in one convenient place.
+                    The platform focuses on making technical topics easier
+                    to read, review, and understand.
                 </p>
+
+                <p>
+                    Explore lessons covering programming, data structures,
+                    algorithms, web development, and other Information
+                    Technology topics as new learning resources become
+                    available.
+                </p>
+
             </div>
+
         </section>
 
     </main>
 
+
     <!-- FOOTER -->
     <footer class="footer">
+
         <div class="footer-main">
 
+
+            <!-- ABOUT -->
             <div class="footer-column footer-about">
+
                 <div class="footer-brand">
-                    <span class="logo">&lt;/&gt;</span>
+
+                    <span
+                        class="logo"
+                        aria-hidden="true">
+                        &lt;/&gt;
+                    </span>
+
                     <div>
+
                         <strong>IT LEARNING HUB</strong>
-                        <small>Learn. Review. Understand.</small>
+
+                        <small>
+                            Learn. Review. Understand.
+                        </small>
+
                     </div>
+
                 </div>
 
                 <p>
-                    A simple platform for IT students to read and review
-                    subject notes.
+                    A simple educational platform for IT students to read,
+                    review, and understand Information Technology subject
+                    notes and learning resources.
                 </p>
 
             </div>
 
+
+            <!-- QUICK LINKS -->
             <div class="footer-column">
+
                 <h3>QUICK LINKS</h3>
+
                 <a href="#home">Home</a>
+
                 <a href="#subjects">Subjects</a>
+
                 <a href="#about">About</a>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
             </div>
 
+
+            <!-- SUBJECTS -->
             <div class="footer-column">
+
                 <h3>SUBJECTS</h3>
-                <a href="subjects/data-structure/index.html">Data Structures & Algorithms</a>
-                <a href="subjects/web-design/index.html">Web Design</a>
+
+                <a href="subjects/data-structure/index.html">
+                    Data Structures &amp; Algorithms
+                </a>
+
+                <a href="subjects/web-design/index.html">
+                    Web Design
+                </a>
+
             </div>
 
+
+            <!-- CONTACT -->
             <div class="footer-column">
+
                 <h3>CONTACT</h3>
-                <p>✉ jakeparas1421@gmail.com</p>
-                <p>☎ +63 930 366 7135</p>
-                <p>⌖ Philippines</p>
+
+                <p>
+                    ✉
+                    <a href="mailto:jakeparas1421@gmail.com">
+                        jakeparas1421@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    ☎
+                    <a href="tel:+639303667135">
+                        +63 930 366 7135
+                    </a>
+                </p>
+
+                <p>
+                    ⌖ Philippines
+                </p>
+
             </div>
 
         </div>
 
+
+        <!-- FOOTER BOTTOM -->
         <div class="footer-bottom">
-            <span>© 2026 IT Learning Hub. All rights reserved | JDP.</span>
-            <span>Informational learning resource.</span>
+
+            <span>
+                © 2026 IT Learning Hub. All rights reserved | JDP.
+            </span>
+
+            <span>
+                Informational learning resource.
+            </span>
+
         </div>
+
     </footer>
 
-    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 
+    <!-- BACK TO TOP -->
+    <button
+        class="back-top"
+        id="backTop"
+        aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <!-- MAIN JAVASCRIPT -->
     <script src="js/script.js"></script>
+
+
+    <!-- VERCEL WEB ANALYTICS -->
     <script>
-      window.va = window.va || function () {
-        (window.vaq = window.vaq || []).push(arguments);
-      };
+        window.va = window.va || function () {
+            (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+
+    <script
+        defer
+        src="/_vercel/insights/script.js">
+    </script>
+
 </body>
+
 </html>
